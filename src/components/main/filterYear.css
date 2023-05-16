@@ -1,0 +1,58 @@
+.years {
+    width: 15%;
+    border: 1px solid red;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.years div h3 {
+    text-align: start;
+    margin: 0 18px;
+}
+
+.years div p {
+    border-bottom: 1px solid black;
+    padding: 0 10px 5px 10px;
+    margin: 4px 21px;
+    font-size: 13px;
+}
+
+.year_btn .btn {
+    margin: 8px 20px;
+    background-color: rgb(188, 249, 98);
+    border: none;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+/* .launch_btn .btn:first-child{
+    background-color: rgb(122, 203, 0);
+} */
+.launch_btn .btn .active {
+    background-color: rgb(122, 203, 0);
+}
+
+.year_btn:last-child {
+    text-align: start;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+
+    .year_btn:last-child {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .years {
+        position: absolute !important;
+        top: 0px !important;
+        display: flex !important;
+        width: 100% !important;
+        height: 500px !important;
+        text-align: center !important;
+    }
+
+}

@@ -1,10 +1,15 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+body{
+  background-color: rgb(183, 183, 183);
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -1,0 +1,6 @@
+.product_container{
+    display: flex;
+    border: 2px solid yellowgreen;
+    flex-wrap: wrap;
+    width: 80%;
+}

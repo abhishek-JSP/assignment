@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import AllList from './components/main/all-list';
+import FilterYear from './components/main/filterYear';
+
 import './App.css';
 
 function App() {
+  const [selectedYear, setSelectedYear] = React.useState("")
+  const [launch, setLaunch] = React.useState("")
+  const [landing, setLanding] = React.useState("")
+  const pickYear = (year) => {
+    console.log(year);
+    setSelectedYear(year)
+  }
+  const selectLaunch = (value) => {
+    console.log(value);
+    setLaunch(value)
+  }
+  const selectLanding = (value) => {
+    console.log(value);
+    setLanding(value)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FilterYear pickYear={pickYear} selectLaunch={selectLaunch} selectLanding={selectLanding}/>
+     <AllList selectedYear = {selectedYear} launch={launch} landing={landing}/>
     </div>
   );
 }
